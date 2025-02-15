@@ -36,10 +36,11 @@
 }
 
 .page {
+    margin-left: 13.15rem;
     font-size: 1.3rem;
     color: #060128;
-    width: 83%;
-    height: auto;
+    width: 70%;
+    height: 100%;
     text-shadow: 0.0625rem 0.09375rem 0.1875rem #222264;
 }
 
@@ -49,7 +50,6 @@
 
 .name {
     display: flex;
-    justify-content: space-between;
     padding-bottom: 0.3rem;
     color: rgb(224, 224, 224);
 }
@@ -57,8 +57,8 @@
 .name input {
     background: linear-gradient(90deg, #ffffff, #d0cfcf);
     border: none;
-    padding: 0.25rem 0.6rem;
-    width: 18.15rem;
+    padding: 0.2rem 0.5rem;
+    width: 17rem;
     border-bottom: 0.2rem solid rgb(46, 46, 46);
     border-radius: 0.13rem;
     font-size: 1.2rem;
@@ -104,7 +104,7 @@ td {
 .email input {
     background: linear-gradient(90deg, #ffffff, #d0cfcf);
     border: none;
-    padding: 0.1rem 0.6rem;
+    padding: 0.2rem 0.6rem;
     width: 24.4rem;
     border-bottom: 0.2rem solid rgb(46, 46, 46);
     border-radius: 0.13rem;
@@ -145,15 +145,20 @@ td {
     zoom: 1.2;
 }
 
-.term input{
- cursor: pointer;
+.term input {
+    border: solid;
+    border-width: 3px;
+    border-color: red;
+    accent-color: green;
+    cursor: pointer;
 }
 
 .condition {
-    padding: 0.31rem 0rem ;
+    padding: 0.31rem 0rem;
     font-size: 1rem;
 }
-.condition label{
+
+.condition label {
     cursor: pointer;
 }
 
@@ -163,7 +168,7 @@ td {
 }
 
 .sr {
-    padding: 0rem 3.13rem;
+    padding: 0rem 3.12rem;
 }
 
 .sr input {
