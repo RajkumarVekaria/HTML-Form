@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form3.css">
+</head>
+
+<body>
+    <form action="form4.html">
+        <div class="background">
+            <div class="login">
+                <div class="heading">
+                    Registration Form
+                </div>
+                <div class="page">
+                    <div class="entername">
+                        <lable for="name">Name :</lable>
+                    </div>
+                    <div class="name">
+                        <div class="fname">
+                            <input type="text" name="fname" placeholder="First Name." required>
+                        </div>
+                        <div class="mname">
+                            <input type="text" name="mname" placeholder="Middle Name." required>
+                        </div>
+                        <div class="lname">
+                            <input type="text" name="lname" placeholder="Last Name." required>
+                        </div>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="gender">Gender :</label>
+                            </td>
+                            <td>
+                                <div class="gender">
+                                    <div class="male">
+                                        <input type="radio" name="gender" id="male" value="male" required>
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div class="female">
+                                        <input type="radio" name="gender" id="female" value="female" required>
+                                        <label for="female">Female</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">E-mail : </label>
+                            </td>
+                            <td>
+                                <div class="email">
+                                    <input type="email" name="email" placeholder="Enter your Email address." required>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone">Phone No : </label>
+                            </td>
+                            <td>
+                                <div class="email">
+                                    <input type="tel" name="phone" minlength="10" maxlength="10"
+                                        placeholder="Enter your Mobile number." required>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="address">Address : </label>
+                            </td>
+                            <td>
+                                <div class="address">
+                                    <textarea name="address" id="address" rows="4" cols="25" placeholder="Enter your Address."></textarea>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="postalcode">Postal code : </label>
+                            </td>
+                            <td>
+                                <div class="email">
+                                    <input type="tel" name="postal code" id="postalcode" minlength="6" maxlength="6"
+                                        placeholder="Enter Postal code." required>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="country">Country : </label>
+                            </td>
+                            <td>
+                                <div class="country">
+                                    <select name="country" id="country">
+                                        <option selected disabled>Select your Country.</option>
+                                        <option>Australia</option>
+                                        <option>Brazil</option>
+                                        <option>China</option>
+                                        <option>Canada</option>
+                                        <option>France</option>
+                                        <option>Germany</option>
+                                        <option>India</option>
+                                        <option>Japan</option>
+                                        <option>New Zealand</option>
+                                        <option>Russia</option>
+                                        <option>Switzerland</option>
+                                        <option>U.S.A.</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="tc">
+                        <div class="term">
+                            <input type="checkbox" name="checkbox" vlaue="checkbox" id="checkbox" required>
+                        </div>
+                        <div class="condition">
+                            <label for="checkbox">Terms & Coditions Applied</label>
+                        </div>
+                    </div>
+                    <div class="submitreset">
+                        <div class="sr">
+                            <input type="submit" name="submit" value="Submit">
+                        </div>
+                        <div class="sr">
+                            <input type="reset" name="reset" value="Reset">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
