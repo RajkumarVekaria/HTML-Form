@@ -24,7 +24,7 @@
     border-radius: 1.25rem;
     box-shadow: 0.625rem 0.625rem 1.875rem #000000;
     height: 50rem;
-    width: 70rem;
+    width: 42rem;
 }
 
 .heading {
@@ -36,11 +36,11 @@
 }
 
 .page {
-    margin-left: 13.15rem;
+    padding-left: 80px;
     font-size: 1.3rem;
     color: #060128;
-    width: 70%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     text-shadow: 0.0625rem 0.09375rem 0.1875rem #222264;
 }
 
@@ -52,13 +52,14 @@
     display: flex;
     padding-bottom: 0.3rem;
     color: rgb(224, 224, 224);
+    /* flex-wrap: wrap; */
 }
 
 .name input {
     background: linear-gradient(90deg, #ffffff, #d0cfcf);
     border: none;
     padding: 0.2rem 0.5rem;
-    width: 17rem;
+    width: 15.3rem;
     border-bottom: 0.2rem solid rgb(46, 46, 46);
     border-radius: 0.13rem;
     font-size: 1.2rem;
@@ -84,8 +85,8 @@ td {
 .gender input {
     cursor: pointer;
     appearance: none;
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1rem;
+    height: 1rem;
     border: 0.13rem solid rgb(0, 0, 0);
     border-radius: 50%;
     outline: none;
@@ -105,7 +106,7 @@ td {
     background: linear-gradient(90deg, #ffffff, #d0cfcf);
     border: none;
     padding: 0.2rem 0.6rem;
-    width: 24.4rem;
+    width: 21rem;
     border-bottom: 0.2rem solid rgb(46, 46, 46);
     border-radius: 0.13rem;
     font-size: 1.1rem;
@@ -115,10 +116,12 @@ td {
 .address textarea {
     background: linear-gradient(135deg, #ffffff, #d0cfcf);
     border: none;
-    padding: 0.15rem 0.6rem;
+    padding: 0rem 0.6rem;
     border-bottom: 0.2rem solid rgb(46, 46, 46);
     border-radius: 0.13rem;
     font-size: 1.1rem;
+    height:5rem;
+    width: 21rem;
     cursor: pointer;
 }
 
@@ -142,7 +145,7 @@ td {
 
 .term {
     padding: 0rem 0.63rem 0rem 0.31rem;
-    zoom: 1.2;
+    zoom: 1;
 }
 
 .term input {
@@ -168,7 +171,7 @@ td {
 }
 
 .sr {
-    padding: 0rem 3.12rem;
+    padding: 0rem 2rem;
 }
 
 .sr input {
@@ -182,4 +185,182 @@ td {
     text-shadow: 0.09rem 0.09rem 0.2rem #0a0a5d;
     border-radius: 10rem;
     cursor: pointer;
+}
+
+
+@media (max-width:700px) {
+    .login {
+        height: 40rem;
+        width: 32rem;
+    }
+    
+    .heading {
+        padding: 2.1rem 0rem;
+        font-size: 2.5rem;
+    }
+    .page {
+        padding: 0rem;
+        font-size: 1rem;
+        width: 90%;
+        height: 90%;
+    }
+    
+    .entername {
+        padding-bottom: 0.35rem;
+    }
+    
+    .name {
+        display: flex;
+        padding-bottom: 0.2rem;  
+    }
+    
+    .name input {
+        padding: 0.1rem 0.4rem;
+        width: 12.75rem;
+        font-size: 1rem;
+    }
+    
+    td {
+        border-right: 1.5rem solid transparent;
+    }
+    
+    td {
+        padding: 0.1rem 0rem;
+    }
+    
+    .gender input {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    
+    .email input {
+        padding: 0.1rem 0.5rem;
+        width: 18rem;
+        font-size: 1rem;
+    }
+    
+    .address textarea {
+        padding: 0.15rem 0.5rem;
+        font-size: 1rem;
+        height:5rem;
+        width: 18rem;
+    }
+    
+    .country select {
+        font-size: 1rem;
+    }
+    
+    .term {
+        padding: 0.15rem 0.63rem 0rem 0.31rem;
+        zoom: 1;
+    }
+    
+    .condition {
+        padding: 0.31rem 0rem;
+        font-size: 0.8rem;
+    }
+    
+    .submitreset {
+        display: flex;
+        padding-top: 2rem;
+    }
+    
+    .sr {
+        padding: 0rem 2.3rem;
+    }
+    
+    .sr input {
+        padding: 0.12rem 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width:550px) {
+    .login {
+        height: 38rem;
+        width: 22.5rem;
+    }
+    
+    .heading {
+        padding: 1.5rem 0rem;
+        font-size: 2rem;
+    }
+    .page {
+        padding: 0rem;
+        font-size: 0.9rem;
+        width: 90%;
+        height: 90%;
+    }
+    
+    .entername {
+        padding-bottom: 0.35rem;
+    }
+    
+    .name {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.2rem;  
+    }
+    
+    .name input {
+        margin-bottom: 0.2rem;
+        padding: 0rem 0.3rem;
+        width: 19rem;
+        font-size: 1rem;
+    }
+    
+    td {
+        border-right: 0.5rem solid transparent;
+    }
+    
+    td {
+        padding: 0.1rem 0rem;
+    }
+    
+    .gender input {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    
+    .email input {
+        padding: 0.1rem 0.5rem;
+        width: 13rem;
+        font-size: 1rem;
+    }
+    
+    .address textarea {
+        padding: 0.15rem 0.5rem;
+        font-size: 1rem;
+        height:5rem;
+        width: 13rem;
+    }
+    
+    .country select {
+        font-size: 1rem;
+    }
+    
+    .term {
+        padding: 0.53rem 0.63rem 0rem 0.31rem;
+        zoom: 0.8;
+    }
+    
+    .condition {
+        padding: 0.31rem 0rem;
+        font-size: 0.7rem;
+    }
+    
+    .submitreset {
+        display: flex;
+        padding-top: 1.5rem;
+    }
+    
+    .sr {
+        padding: 0rem 0.7rem;
+    }
+    
+    .sr input {
+        padding: 0.15rem 2rem;
+        font-size: 1.1rem;
+    }
 }
